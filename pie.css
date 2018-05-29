@@ -1,0 +1,82 @@
+h1{
+	font-size: 22pt;
+	text-align: center;
+}
+
+h2 {
+	font-size: 18pt;
+}
+
+a{
+	color: #A4A400;
+}
+
+.headers_common_style{
+	font-family: "Century Gothic", Futura, Verdana, sans-serif;
+	text-decoration: underline;
+	background-color: #F0F0F0;
+	color: #A4A400;
+}
+
+.body_common_style{
+	font-size: 11pt;
+	font-family: Georgia, Garamond, serif;
+	color: #404040;
+	display: block;
+}
+
+/*
+	For use with the unordered sub-list. The assignment doesn't specify this in the requirement, however in order to get that
+	particular appearance, you need to explicity use "circle."
+*/
+.sub_list{
+	list-style-type: circle;
+}
+
+/*
+	To avoid having hard coded style tags like <s> directly inline. This allows control to quickly refactor the style without 
+	deleting or adding new tags.
+*/
+.strikethrough_text{
+	text-decoration: line-through;
+}
+
+/*
+	To avoid having hard coded style tags like <u> directly inline (deprecated).
+*/
+.underline_text{
+	text-decoration: underline;
+}
+
+/*
+	To avoid having hard coded style tags like <strong> or <b> (deprecated) directly inline.
+*/
+.bold_text{
+	font-weight: bold;
+}
+
+/*
+	For this, there wasn't anything mentioned about the comments I could find in the requirement. I used a color-dropper to get
+	the hex value for the background color. 
+
+	I noticed that in the picture the edge of the first comment started in line with the
+	right-hand edge of the letter "E" in "USER" in the header element in the picture. I used a percentage to get that aligned 
+	so that it will be responsive on other web browsers.
+
+	I also searched to see if perhaps I had missed an HTML element in the reading or online which has this as default behavior. 
+	I found <mark> but that's specifically for text elements. I tried to use it with a <p> element but it didn't work properly.
+*/
+.comments{
+	font-style: italic;
+	background-color: #FFFF98; 
+	margin-left: 2.8%;
+	margin-right: 2.8%;
+}
+
+/*
+	This allows the text to align on the right hand side but to start on the left margin of the page.
+*/
+.rt_jstf_flt_lf{
+  	text-align: right;
+  	float: left;
+}
